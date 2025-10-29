@@ -140,7 +140,10 @@ export default function AddNewService() {
   }
 
   async function GetDepartments() {
-    const { data, error } = await supabase.from('department').select('*');
+    const { data, error } = await supabase
+      .from('department')
+      .select('*')
+      .order('id', { ascending: true });
     console.log('Departments: ', data, error);
     if (error) {
       Swal.fire('Error', 'Unable to get departments.', 'error');
