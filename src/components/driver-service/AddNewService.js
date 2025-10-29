@@ -172,7 +172,7 @@ export default function AddNewService() {
     }
   }
 
-  async function handleReset() {
+  async function handleReset(e) {
     SetNewService({
       purpose: '',
       description: '',
@@ -187,6 +187,8 @@ export default function AddNewService() {
     });
 
     SetErrors({});
+
+    if (e?.target?.reset) e.target.reset();
   }
 
   // ✅ Submit with existing realtime errors check
@@ -254,7 +256,7 @@ export default function AddNewService() {
         confirmButtonText: 'OK'
       });
 
-      await handleReset();
+      await handleReset(e);
     } catch (error) {
       Swal.fire('Error', error.message, 'error');
     }
