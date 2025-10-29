@@ -1,0 +1,34 @@
+/* ===== AddDriver.css ===== */
+
+/* Wrapper ng buong form */
+.driver-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Grid layout for form fields */
+.driver-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Email at Phone full width */
+.driver-form .full-width {
+  grid-column: 1 / -1;
+}
+
+/* Buttons section (aligned sa dulo ng inputs) */
+.driver-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Optional: consistent input spacing */
+.form-floating .form-control {
+  min-height: 3.5rem;
+}

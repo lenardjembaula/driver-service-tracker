@@ -1,0 +1,7 @@
+.add-refresh-buttons {
+  padding-top: 1rem;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}

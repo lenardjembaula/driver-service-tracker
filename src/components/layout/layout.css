@@ -1,0 +1,22 @@
+/* layout.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Buong taas ng screen */
+}
+
+main {
+  flex: 1; /* Itutulak ang footer pababa */
+}
+
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem;
+}

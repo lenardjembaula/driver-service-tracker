@@ -1,0 +1,29 @@
+.driver-service-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.driver-service-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.driver-service-form .full-width {
+  grid-column: 1/ -1;
+}
+
+#description {
+  height: 120px;
+}
+
+.is-missing {
+  border: 2px solid #dc3545 !important; /* Red for missing fields */
+  background-color: #ffe5e5;
+}
+
+.is-warning {
+  border: 2px solid #ffc107 !important; /* Yellow for validation error */
+  background-color: #fff8e1;
+}
