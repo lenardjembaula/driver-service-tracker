@@ -259,7 +259,7 @@ export default function AddNewService() {
 
   return (
     <div className="driver-service-container">
-      <h2 className="text-center mb-4">Book a driver service</h2>
+      <h2 className="text-center mb-4">Book a Service Driver</h2>
 
       <form autoComplete="off" onSubmit={handleSubmit}>
         <div className="driver-service-form">
