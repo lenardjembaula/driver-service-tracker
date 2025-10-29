@@ -84,6 +84,7 @@ export default function AddNewService() {
     // Date Selector
     flatpickr('#date', {
       dateFormat: 'Y-m-d',
+      disableMobile: true,
       minDate: 'today',
       onChange: (selectedDates, dateStr) => {
         SetNewService((prev) => ({ ...prev, date: dateStr }));
@@ -95,6 +96,7 @@ export default function AddNewService() {
     flatpickr('#start_time', {
       enableTime: true,
       noCalendar: true,
+      disableMobile: true,
       dateFormat: 'h:i K',
       defaultDate: '12:00 AM',
       formatDate: (d) =>
@@ -112,6 +114,7 @@ export default function AddNewService() {
     flatpickr('#end_time', {
       enableTime: true,
       noCalendar: true,
+      disableMobile: true,
       dateFormat: 'h:i K',
       defaultDate: '12:00 AM',
       formatDate: (d) =>
