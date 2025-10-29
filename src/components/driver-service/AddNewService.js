@@ -174,6 +174,7 @@ export default function AddNewService() {
 
   async function handleReset(e) {
     SetNewService({
+      requestor_department: 'Select a Department',
       purpose: '',
       description: '',
       date: '',
