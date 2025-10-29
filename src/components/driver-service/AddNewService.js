@@ -255,7 +255,9 @@ export default function AddNewService() {
         text: 'Driver service booked successfully!',
         icon: 'success',
         confirmButtonText: 'OK'
-      }).then(() => navigate('/driver-service/add-new-service-global'));
+      }).then(() => {
+        window.location.reload();
+      });
     } catch (error) {
       Swal.fire('Error', error.message, 'error');
     }
